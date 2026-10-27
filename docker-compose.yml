@@ -1,0 +1,17 @@
+services:
+  bot:
+    build: .
+    env_file: .env
+    volumes:
+      - ./data:/opt/app/data
+    restart: unless-stopped
+
+  # Опционально: свой self-hosted LibreTranslate в качестве основного fallback.
+  # Раскомментируйте и укажите в .env:
+  #   LIBRETRANSLATE_URL=http://libretranslate:5000/translate
+  #
+  # libretranslate:
+  #   image: libretranslate/libretranslate:latest
+  #   ports:
+  #     - "5000:5000"
+  #   restart: unless-stopped

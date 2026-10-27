@@ -1,0 +1,16 @@
+.venv/
+venv/
+.git/
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+*.db
+*.db-journal
+*.sqlite3
+*.log
+.env
+docs/
+tests/
+project_dump.md
+collect_project.py

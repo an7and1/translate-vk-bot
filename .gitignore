@@ -1,0 +1,30 @@
+# Окружение и секреты
+.venv/
+venv/
+.env
+.clinerules
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE / ОС
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Локальные данные и логи
+*.db
+*.db-journal
+*.sqlite3
+*.log
+data/
+project_dump.md
+collect_project.py
